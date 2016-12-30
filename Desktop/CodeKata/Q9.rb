@@ -5,8 +5,11 @@ def sumN(n)
 		return "Non-Integer input!"
 	end
 	sum = 0
-	for i in 0..n do
+	for i in 0..n.abs do
 		sum+=i
+	end
+	if n < 0
+		return -sum
 	end
 	return sum
 end
