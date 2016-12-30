@@ -11,7 +11,10 @@ def sign(n)
 end
 
 def even(n)
-	if n % 2 == 0
+	if ( n.to_s =~ /^\D*$/ )
+		return -1
+	end
+	if n.to_i % 2 == 0
 		return 0
 	end
 	return 1
@@ -60,6 +63,3 @@ def hello5()
 		puts "Hello"
 	end
 end
-
-
-hello5()
