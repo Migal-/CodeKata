@@ -2,7 +2,7 @@
 
 def palindrome(n)
 	if n.is_a? Integer
-		n = n.to_s
+		n = n.abs.to_s
 	else
 		return "Invalid input type"
 	end
