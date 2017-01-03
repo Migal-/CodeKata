@@ -5,8 +5,12 @@ def factorial(n)
 		return "Invalid input type"
 	end
 	f = 1
-	for i in 2..n
+	for i in 2..n.abs
 		f*=i
 	end
-	f
+	if n > 0
+		f
+	else
+		-f
+	end
 end
