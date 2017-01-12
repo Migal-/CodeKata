@@ -38,3 +38,4 @@ def multTable(x1,x2,y1,y2)
 	puts finStr
 end
 
+(x1..x2).each{ |x| x*(y1..y2).each{ |y| y}}
